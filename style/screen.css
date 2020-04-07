@@ -1,0 +1,90 @@
+/* 2x2 grid content layout for each of the menu items in each page */
+.contain {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 100px;
+	margin-top: -100px;
+  }
+  .box {
+    border: 1px solid rgb(201, 196, 158); 
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .new{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 100px;
+	margin-top: -100px;
+  }
+
+  .social{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 100px;
+	margin-top: -100px;
+  }
+
+  /* adjusting the grid 2x2 layout for different screen sizes */
+
+@media screen and (min-width:1400px){
+    .contain img {
+        width: 325px;
+    }
+    .contain{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .new{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .new img{
+        width:325px;
+    }
+    .social{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:850px) and (max-width:1400px){
+    .contain img {
+        width: 300px;
+    }
+    .contain {
+        grid-template-columns: 1fr 1fr;
+    }  
+
+    .new{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .new img{
+        width:300px;
+    }
+    .social{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:850px){
+    .contain img {
+        width: 55%;
+    }
+    .contain {
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .new{
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .new img{
+        width: 55%;
+    }
+    .social{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}

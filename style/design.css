@@ -1,0 +1,179 @@
+fheader, body, footer{
+    text-align: center;
+    background-color: rgb(4, 14, 24);
+    color: white;
+}
+
+/*body Tag*/
+body{
+    margin:auto; 
+}
+
+p{
+    padding: 5px;
+    font-size: 16px; 
+}
+/* fonts  */
+h2, h3, h4{
+    font-family: 'Times New Roman', Times, sans-serif; 
+    font-size: 20px; 
+}
+
+header img{
+    height: 500px;    
+}
+
+.textsm{
+  color: rgb(201, 196, 158);
+}
+
+
+/* horizontal scrolling menu for links in page areas*/
+div.MenuBar{
+    background-color: rgb(7, 38, 68);
+    overflow: auto; 
+    white-space: nowrap;
+}
+
+div.MenuBar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  div.MenuBar a:hover {
+    background-color:rgb(201, 196, 158);
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(7, 38, 68);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: rgba(255, 255, 255, 0.74);
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: grey;
+    color: black;
+  }
+
+  /*horizontal line and the color*/
+  hr.line{
+      border: 1px solid rgb(201, 196, 158);
+  }
+
+   /*Used on footerr*/
+  #left{
+    text-align: left;
+  }
+
+  #lastP{
+    color: white;
+    font-size: ;
+  }
+
+  #TDivPic{
+    background-color: rgb(4, 14, 24);
+  }
+
+  #proPicZ{
+    display: block;
+    margin: auto;
+    margin-top: 1.5%;
+    width: 240px; 
+    height: 210px;
+    border: 4px solid rgb(138, 135, 116);
+    border-radius: 155px; 
+  }
+  
+  /* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: auto;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+/* Less or 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* start of 850-1050px breakpoint*/
+
+@media screen and (min-width:850px) and (max-width: 1050px) {
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+.headerNav {
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  z-index: 4;
+}
+
+nav {
+  display: flex;
+  flex-direction: row; 
+  justify-content:space-between;
+  align-items: center; 
+}
+
+nav a{
+  width: 100px;
+  background-color: rgb(255,255,255);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+}
+/* end of 850px breakpoint*/
